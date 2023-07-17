@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Admin/Index.cshtml";
+    int count = 0;
 }
 
 <h2>Rehber İşlemleri</h2>
@@ -16,8 +17,9 @@
     </tr>
     @foreach (var item in Model)
     {
+        count++;
         <tr>
-            <td>@item.GuideID</td>
+            <td>@count</td>
             <td>@item.GuideName</td>
             <td>@item.GuideTitle</td>
             <td> <a href="/AdminGuide/DeleteGuide/@item.GuideID" class="btn btn-outline-danger">Sil</a> </td>
@@ -26,4 +28,4 @@
     }
 </table>
 
-<td> <a href="#" class="btn btn-outline-info">Yeni Rehber Girişi</a> </td>
+<td> <a href="/AdminGuide/AddGuide/" class="btn btn-outline-info">Yeni Rehber Girişi</a> </td>

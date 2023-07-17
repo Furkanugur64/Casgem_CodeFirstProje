@@ -1,0 +1,76 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kayıt Ol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="~/Templates/register/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="~/Templates/register/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="image-holder">
+            <img src="~/Templates/register/images/holiday.jpg" alt="">
+        </div>
+        <div class="form-inner">
+            <form method="post">
+                <div class="form-header">
+                    <h3>Kayıt Ol</h3>
+                    <img src="~/Templates/register/images/sign-up.png" alt="" class="sign-up-icon">
+                </div>
+                <div class="form-group">
+                    <label for="">Kullanıcı Adı:</label>
+                    <input type="text" name="Username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Şifre:</label>
+                    <input type="password" class="form-control" name="Password">
+                </div>
+                <button type="submit">Kaydol</button>
+                <br />
+                <div class="text-center p-t-12">
+                    <span class="txt1">
+                        Hesabın var mı ?
+                    </span>
+                    <a class="txt2" href="/Login/Index/">
+                        Giriş Yap
+                    </a>
+                </div>
+
+                <div class="socials">
+                    <p>Bizi Takip Edin</p>
+                    <a href="https://www.facebook.com/furkan.ugur.1023" class="socials-icon">
+                        <i class="zmdi zmdi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ugurfurkan64/" class="socials-icon">
+                        <i class="zmdi zmdi-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/FurkanU48228035" class="socials-icon">
+                        <i class="zmdi zmdi-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/furkan-ugur64/" class="socials-icon">
+                        <i class="zmdi zmdi-linkedin"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="~/Templates/register/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Templates/register/js/jquery.form-validator.min.js"></script>
+    <script src="~/Templates/register/js/main.js"></script>
+</body>
+</html>

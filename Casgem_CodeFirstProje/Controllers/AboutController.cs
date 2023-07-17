@@ -14,8 +14,7 @@ namespace Casgem_CodeFirstProje.Controllers
         // GET: About
         public ActionResult Index()
         {
-            var values = travelContext.Guides.Include("SocialMedia").ToList();
-            
+            var values = travelContext.Guides.Include("SocialMedia").ToList();            
             return View(values);
         }
 

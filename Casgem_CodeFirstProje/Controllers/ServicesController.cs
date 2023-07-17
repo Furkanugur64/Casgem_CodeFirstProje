@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Casgem_CodeFirstProje.DAL.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,12 @@ namespace Casgem_CodeFirstProje.Controllers
 {
     public class ServicesController : Controller
     {
+        TravelContext travelContext = new TravelContext();
         // GET: Services
         public ActionResult Index()
         {
-            return View();
+            var values = travelContext.Cities.ToList();
+            return View(values);
         }
 
         public PartialViewResult PartialHead()
@@ -30,7 +33,7 @@ namespace Casgem_CodeFirstProje.Controllers
         }
 
         public PartialViewResult PartialServices()
-        {
+        {           
             return PartialView();
         }
 

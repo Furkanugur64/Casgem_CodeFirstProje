@@ -11,19 +11,19 @@
 
 
 <form method="post">
-    @Html.HiddenFor(x=>x.GuideID)
+    @Html.HiddenFor(x => x.GuideID)
     <label>Rehber Ad Soyad: </label>
-    @Html.TextBoxFor(x => x.GuideName, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.GuideName, new { @class = "form-control border" })
     <br />
 
     <label>Rehber Ünvanı: </label>
-    @Html.TextBoxFor(x => x.GuideTitle, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.GuideTitle, new { @class = "form-control border" })
     <br />
 
     <label>Rehber Fotoğraf URL: </label>
-    @Html.TextBoxFor(x => x.GuideImageURL, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.GuideImageURL, new { @class = "form-control border" })
     <br />
-
+    <a href="/AdminGuide/Index/" class="btn btn-danger">İptal</a>
     <button class="btn btn-warning">Güncelle</button>
 </form>
 
